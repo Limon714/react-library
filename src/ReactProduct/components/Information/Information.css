@@ -1,0 +1,39 @@
+.info-card {
+  border: 2px solid black;
+  border-radius: 8px;
+  width: 270px;
+  height: 470px;
+  margin: 15px 15px;
+  position: relative;
+}
+.info-card:hover {
+  background-color: white;
+  box-shadow: 5px 10px #888888;
+}
+.data-image {
+  width: 250px;
+  margin: 7px;
+  border-radius: 8px;
+}
+.details-container {
+  margin-left: 14px;
+}
+.description {
+  width: 240px;
+}
+.info-btn {
+  width: 70%;
+  position: absolute;
+  bottom: 3px;
+  left: 35px;
+  background-color: rgb(243, 243, 61);
+  cursor: pointer;
+  border-radius: 8px;
+}
+.info-btn:hover {
+  background: black;
+  color: white;
+}
+.info-btn:focus {
+  background-color: green;
+}

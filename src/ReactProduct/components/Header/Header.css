@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+.body-text {
+  padding-left: 50px;
+  margin-bottom: -60px;
+}
+.header-logo {
+  width: 80px;
+}
+.gym-name {
+  margin-left: 15px;
+  color: #ffeb00;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+h4 {
+  padding-left: 50px;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    font-size: 15px;
+    display: flex;
+    margin: 55px 25px;
+  }
+  .gym-name {
+    margin: 55px 45px;
+  }
+}

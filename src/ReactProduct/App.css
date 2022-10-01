@@ -1,0 +1,32 @@
+body {
+  background-color: #e6e9e6;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.App {
+  margin: auto;
+}
+.welcome-text {
+  text-align: center;
+  height: 60px;
+  align-items: center;
+  margin: 30px 15px;
+  padding: 25px;
+  background-color: white;
+}
+.answer-container {
+  background-color: white;
+  margin: 30px 45px;
+  padding: 25px;
+}
+
+@media (max-width: 468px) {
+  .welcome-text{
+    width: 650px;
+  }
+  .answer-container{
+    margin: 0px;
+    width: 700px;
+  }
+  
+}
