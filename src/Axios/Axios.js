@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 const Axios = () => {
   const [mydata, setmydata] = useState([])
-  const [err, setError] =useState("")
+  const [err, setError] = useState("")
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/posts")
       .then((res) => setmydata(res.data))
