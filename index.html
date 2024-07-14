@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML CSS Slider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="slide">
+
+
+        <div class="slides" style="--img:url('./images/img (1).jpg')">
+            <div class="content">
+                <h1> Slider 01</h1>
+                <p> A mesmerizing 3D render of a surreal Hellscape landscape, crafted with intricate details and textures, bathed in an intense ring light that amplifies the eerie atmosphere. </p>
+            </div>
+        </div>
+        <div class="slides" style="--img:url('./images/img (2).jpg')">
+            <div class="content">
+                <h1> Slider 02</h1>
+                <p> A mesmerizing 3D render of a surreal Hellscape landscape, crafted with intricate details and textures, bathed in an intense ring light that amplifies the eerie atmosphere. </p>
+
+            </div>
+        </div>
+        <div class="slides" style="--img:url('./images/img (3).jpg')">
+            <div class="content">
+                <h1> Slider 03</h1>
+                <p>This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. </p>
+
+            </div>
+        </div>
+        <div class="slides" style="--img:url('./images/img (4).jpg')">
+            <div class="content">
+                <h1> Slider 04</h1>
+                <p>This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. </p>
+
+            </div>
+        </div>
+        <div class="slides" style="--img:url('./images/img (5).jpg')">
+            <div class="content">
+                <h1> Slider 5</h1>
+                <p>This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. </p>
+
+            </div>
+        </div>
+        <div class="slides" style="--img:url('./images/img (6).jpg')">
+            <div class="content">
+                <h1> Slider 06</h1>
+                <p>This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. This is a slider 01. that express a nice view. </p>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="buttons">
+    <span class="prev"><i class="fa-solid fa-chevron-left"></i></span>
+    <span class="next"><i class="fa-solid fa-chevron-right"></i></span>
+
+</div>
+
+
+
+<script>
+
+    let next = document.querySelector('.next');
+    let prev = document.querySelector('.prev');
+    let slider = document.querySelector('.slide');
+
+    next.addEventListener('click',function (){
+        let  slides = document.querySelectorAll('.slides');
+        slider.appendChild(slides[0]);
+    })
+
+    prev.addEventListener('click',function (){
+        let  slides = document.querySelectorAll('.slides');
+        slider.prepend( slides [slides.length - 1 ]);
+    })
+
+
+</script>
+</body>
+</html>
